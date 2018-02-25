@@ -1,0 +1,39 @@
+/* General */
+body {
+    font-family: "Helvetica","Arial",sans-serif;
+}
+
+/* Login page */
+#login_h1 {
+    color: black;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px 20px 10px;
+    box-sizing: border-box;
+}
+
+#login {
+    background: #01906d;
+    color: white;
+    max-width: 550px;
+    min-height: 350px;
+    padding: 20px;
+    margin: 0 auto 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#login p {
+    margin-top: 0;
+}
+
+#login input {
+    width: 100%;
+    margin-top: 7px;
+}
+
+#login input[type=submit] {
+    width: auto;
+    margin-top: 7px;
+    padding: 7px 20px;
+}

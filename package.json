@@ -1,0 +1,25 @@
+{
+  "name": "simple-nodejs-todo-list-on-aws2",
+  "version": "1.0.0",
+  "description": "- Simple Node.js To Do List on AWS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hollyw00d/simple-nodejs-todo-list-on-aws2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hollyw00d/simple-nodejs-todo-list-on-aws2/issues"
+  },
+  "homepage": "https://github.com/Hollyw00d/simple-nodejs-todo-list-on-aws2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.0.7"
+  }
+}
