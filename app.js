@@ -21,7 +21,26 @@ app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.render('login');
+    let urlSignup;
+    
+    if(req.originalUrl === '/') {
+        urlSignup = '/';
+    }
+
+    res.render('signup', {
+        urlSignup
+    });
+});
+
+app.get('/login', (req, res) => {
+    let urlLogin;
+    if(req.originalUrl === '/login') {
+        urlLogin = '/login';
+    }
+
+    res.render('login', {
+        urlLogin
+    });
 });
 
 // Set port

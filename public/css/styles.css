@@ -1,10 +1,36 @@
-/* General */
+/* General and Navigation */
 body {
     font-family: "Helvetica","Arial",sans-serif;
 }
 
+#nav {
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 20px 20px 0;
+}
+
+#nav li {
+    float: left;
+    padding-right: 20px;
+}
+
+#nav a:link, #nav a:visited {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+#nav a.current:link, #nav a.current:visited, #nav a.current:hover, #nav a.current:active,
+#nav a:hover, #nav a:active {
+    border-bottom: 4px solid #E20028;
+}
+
 /* Login page */
-#login_h1 {
+#login_h1, #signup_h1 {
     color: black;
     max-width: 550px;
     margin: 0 auto;
@@ -12,7 +38,7 @@ body {
     box-sizing: border-box;
 }
 
-#login {
+#login, #signup {
     background: #01906d;
     color: white;
     max-width: 550px;
@@ -23,16 +49,16 @@ body {
     font-size: 20px;
 }
 
-#login p {
+#login p, #signup p {
     margin-top: 0;
 }
 
-#login input {
+#login input, #signup input {
     width: 100%;
     margin-top: 7px;
 }
 
-#login input[type=submit] {
+#login input[type=submit], #signup input[type=submit] {
     width: auto;
     margin-top: 7px;
     padding: 7px 20px;
