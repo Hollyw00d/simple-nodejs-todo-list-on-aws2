@@ -20,6 +20,8 @@ app.set('view engine', 'handlebars');
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
+let Todo = require('./models/todoModel');
+
 app.get('/', (req, res) => {
     let urlSignup;
     
